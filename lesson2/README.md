@@ -1,8 +1,3 @@
-## Setup local kafka
-Make sure your have docker-compose installed.
-
-`docker-compose up -d --build`
-
 ## Start the application 
 App should start once the Kafka is running. 
 The Binder in the app dependency will create required topic. 
@@ -10,11 +5,18 @@ The Binder in the app dependency will create required topic.
 ## Use the local Kafka to generate messages
 Access the docker container for the broker.
 
-`docker exec -it lesson1_kafka_1 /bin/bash`
+`docker ps --format '{{.Names}}'`
+
+`docker ps --format '{{.Names}}' | head -n 1`
+
+`docker exec -it $(docker ps --format '{{.Names}}' | head -n 1) /bin/bash`
 
 Use CLI to send messages on the topic. 
 
 `kafka-topics --zookeeper zookeeper:2181 --list`
 
-If the topic is not there then check if the app successfully started. 
-`kafka-console-producer --broker-list localhost:9092 --topic process-in-0`
+Start producer console in one shell - 
+`kafka-console-producer --broker-list localhost:9092 --topic wordCount-in-0`
+
+Start consume console in another shell - 
+`kafka-console-consumer --bootstrap-server localhost:9092 --topic wordCount-out-0`
