@@ -15,8 +15,13 @@ Use CLI to send messages on the topic.
 
 `kafka-topics --zookeeper zookeeper:2181 --list`
 
+The topic name is created using the name of the method, in this wordCount. By default, it will create one topic for input stream and one for output stream.
+
+
 Start producer console in one shell - 
+
 `kafka-console-producer --broker-list localhost:9092 --topic wordCount-in-0`
 
 Start consume console in another shell - 
+
 `kafka-console-consumer --bootstrap-server localhost:9092 --topic wordCount-out-0`
