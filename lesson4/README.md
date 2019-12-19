@@ -1,3 +1,6 @@
+# Content based message routing to multiple topics
+Streaming app sends events to different topics based on the message content. 
+
 ## Start the application 
 App should start once the Kafka is running. 
 The Binder in the app dependency will create required topic. 

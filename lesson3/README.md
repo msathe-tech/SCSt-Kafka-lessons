@@ -1,3 +1,6 @@
+# Multiplexed streams 
+Stream taking input from more than one topic.
+
 ## Start the application 
 App should start once the Kafka is running. 
 The Binder in the app dependency will create required topic. 
