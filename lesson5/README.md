@@ -1,5 +1,8 @@
 # Join KStream and KTable using BiFunction
 This application demonstrates ability to join KStream and KTable and generate an output KStream.
+The USER_CLICKS KStream has stream of Click count per user. USER_REGION KTable has map of User and Region. 
+The REGION_CLICKS KStream produced by this application has a continuous aggregate count of Clicks per Region. 
+
 The application has following components -
 
 1. populateUserRegionMap - this loads USER_REGION topic with map of <User, Region>

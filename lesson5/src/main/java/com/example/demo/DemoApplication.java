@@ -29,6 +29,7 @@ import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Bean;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.annotation.Scheduled;
+
 @SpringBootApplication
 @EnableScheduling
 public class DemoApplication {
@@ -140,7 +141,7 @@ public class DemoApplication {
 		final Properties streamsConfiguration = new Properties();
 
 		streamsConfiguration.put(StreamsConfig.BOOTSTRAP_SERVERS_CONFIG, BOOTSTRAP_SERVER);
-		// Specify default (de)serializers for record keys and for record values.
+		// Specify Serde for record keys and for record values.
 		streamsConfiguration.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, keySerdeClass);
 		streamsConfiguration.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, valueSerdeClass);
 
