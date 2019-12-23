@@ -8,10 +8,16 @@ The application has following components -
 4. checkRegionClicks - prints REGION_CLICKS stream 
 
 ## Start the application 
-App should start once the Kafka is running. 
+
+Make sure the kafka is running -
+
+`docker ps`
+
+Run the app 
+
 The Binder in the app dependency will create required topic. 
 
-## Use the local Kafka to generate messages
+## Check the topics created
 Access the docker container for the broker.
 
 `docker ps --format '{{.Names}}'`
@@ -23,3 +29,6 @@ Access the docker container for the broker.
 Use CLI to send messages on the topic. 
 
 `kafka-topics --zookeeper zookeeper:2181 --list`
+
+In this demo you can't see the data for USER_CLICKS and REGION_CLICKS topics because the value data type is not String. 
+The app will print the data output for you so you don't need to watch the topics separately. 
