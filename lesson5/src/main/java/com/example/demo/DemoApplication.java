@@ -75,14 +75,8 @@ public class DemoApplication {
 
 	@Bean
 	public BiFunction<KStream<String, Long>, KTable<String, String>, KStream<String, Long>>  streamTableBiFunction() {
-		return (userClickStream, userRegionTable) -> {
-			userClickStream.foreach(new ForeachAction<String, Long>() {
-				@Override
-				public void apply(String s, Long aLong) {
-					System.out.println("foo: " + s + aLong);
-				}
-			});
-			return (userClickStream
+
+			return (userClickStream, userRegionTable) -> (userClickStream
 					.leftJoin(userRegionTable,
 							(clicks, region) ->
 									new RegionWithClicks(region == null ? "UNKNOWN" : region, clicks),
@@ -92,7 +86,6 @@ public class DemoApplication {
 					.reduce(Long::sum)
 					.toStream()
 			);
-		};
 	}
 
 	@Bean
