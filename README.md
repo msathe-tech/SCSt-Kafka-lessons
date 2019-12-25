@@ -77,3 +77,6 @@ This is the most advanced lab. It helps you understand few advanced concepts -
 * joining KStream and KTable to produce a KStream
 
 BiFunction is used here as the application takes two inputs and produces one output.
+
+### Contributions
+SCSt contributor - Soby Chacko
