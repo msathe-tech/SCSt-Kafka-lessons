@@ -25,7 +25,7 @@ Check that the containers are running properly.
 
 Run `stop-docker.sh` to stop all docker containers on your workstation.
 
-**Note** - It is better to stop and start Kafka after each lab.
+**Note - It is better to stop and start Kafka after each lab. This will help you practice important commands and will keep the topics separate for each lab for ease of understanding. **
 
 ## Labs
 
