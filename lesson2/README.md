@@ -1,4 +1,4 @@
-#Stateful streaming transformation
+# Stateful streaming transformation
 Input stream of text is split up and words are counted, keeping the state alive.
 The word counts are emitted to output stream.
 This application uses Function interface because it takes one input and produces one output.

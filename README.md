@@ -1,4 +1,4 @@
-#Spring Cloud Stream with Kafka Lessons
+# Spring Cloud Stream with Kafka Lessons
 
 This repository is a collection of progressive hands-on labs that will guide you
 through building cloud native [Spring Cloud Stream](https://spring.io/projects/spring-cloud-stream)
@@ -76,4 +76,4 @@ This is the most advanced lab. It helps you understand few advanced concepts -
 * KStream and KTable duality
 * joining KStream and KTable to produce a KStream
 
-BiFunction is used here as the application takes two inputs and produces one output. 
+BiFunction is used here as the application takes two inputs and produces one output.

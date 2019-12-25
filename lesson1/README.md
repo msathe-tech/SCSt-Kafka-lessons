@@ -1,4 +1,4 @@
-#Simple KStream application
+# Simple KStream application
 Learn how to use Consumer interface to create a basic KStream application.
 Consumer interface is used when you only have input but no output.
 That means this application doesn't emit any event back to Kafka.
