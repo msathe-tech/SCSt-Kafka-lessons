@@ -7,7 +7,8 @@ applications with Apache Kafka.
 The workshop intends to help developers understand the abstraction provided by
 [Spring Cloud Stream for Apache Kafka](https://cloud.spring.io/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka.html).
 
-In this workshop we will explore new Functional programming model introduced in Spring Cloud Stream.
+In this workshop we will explore *new Functional programming model introduced in Spring Cloud Stream*.
+The new Functional API further enhances developers productivity by eliminating even more boilerplate.
 
 ## Setting up Kafka
 The workshop assumes the Kafka is running on your local machine with default ports.
