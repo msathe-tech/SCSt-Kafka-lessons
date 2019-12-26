@@ -33,11 +33,11 @@ This will help you practice important commands and will keep the topics separate
 
 The labs are based on series of lessons. Each lesson adds a new functionality.
 
-* [Lesson1](https://github.com/msathe-tech/SCSt-Kafka-lessons/tree/master/lesson1)
-* [Lesson2](https://github.com/msathe-tech/SCSt-Kafka-lessons/tree/master/lesson2)
-* [Lesson3](https://github.com/msathe-tech/SCSt-Kafka-lessons/tree/master/lesson3)
-* [Lesson4](https://github.com/msathe-tech/SCSt-Kafka-lessons/tree/master/lesson4)
-* [Lesson5](https://github.com/msathe-tech/SCSt-Kafka-lessons/tree/master/lesson5)
+* [Lesson1](https://github.com/msathe-tech/SCSt-Kafka-lessons/tree/master/lesson1) - Simple KStream SpringBoot application using Consumer interface, consuming Kafka topic events as a stream
+* [Lesson2](https://github.com/msathe-tech/SCSt-Kafka-lessons/tree/master/lesson2) - Stateful transformation using Function interface
+* [Lesson3](https://github.com/msathe-tech/SCSt-Kafka-lessons/tree/master/lesson3) - Multiplexed streams, sourcing events from more than one Kafka topics
+* [Lesson4](https://github.com/msathe-tech/SCSt-Kafka-lessons/tree/master/lesson4) - Content based events routing
+* [Lesson5](https://github.com/msathe-tech/SCSt-Kafka-lessons/tree/master/lesson5) - Stream table duality using BiFunction 
 
 We will use Hoxton.RELEASE for Spring Cloud.
 
